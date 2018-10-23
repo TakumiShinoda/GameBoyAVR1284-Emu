@@ -1,0 +1,8 @@
+brightness 200
+platform FirMINOS
+hogehoge 100
+fugafuga 500
+wasawasa 120
+gudaguda 30
+hyuhyu 123
+areare 412

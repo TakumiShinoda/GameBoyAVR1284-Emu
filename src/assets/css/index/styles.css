@@ -18,8 +18,21 @@ body{
   -webkit-app-region: no-drag;
 }
 
-#webviewExm1{
-  background: rgb(255, 255, 255);
-  width: 320px;
-  height: 200px;
+#displayArea{
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
+#display{
+  margin: auto;
+}
+
+#inspection{
+  /* height: 100%; */
+}
+
+#inspection hr{
+  width: 60%;
+  margin-left: 200px;
 }

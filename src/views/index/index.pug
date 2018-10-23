@@ -2,4 +2,14 @@ include ../_header.pug
   div.container
     h1 GameBoyAvr1284-Emu
     hr
-    canvas#display(width="160" height="128")
+    div#displayArea
+      canvas#display(width="160" height="128")
+    div#inspection
+      h4 Inspection
+      hr
+      span
+        strong Platform:
+        div#insPlatform
+      span
+        strong Brightness:
+        div#insBrightness 

@@ -15,6 +15,10 @@
     {
       "src": "src/assets/typescript/index/webviewResources/webviewExm1/domReady.js",
       "dest": "./dist/js/index/webviewResources/webviewExm1/"
+    },
+    {
+      "src": "src/assets/fms/*",
+      "dest": "./dist/bundles/"
     }
   ],
   "routes": [
