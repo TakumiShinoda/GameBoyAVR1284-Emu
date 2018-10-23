@@ -27,4 +27,15 @@ export default class RenderEngine{
     this.Ctx.fillRect(0, 0, 160, 128)
     this.Ram.setVGRAM(0, 0, 160, 128, this.Util.convertStr888ToUint16565(color))
   }
+
+  drawVGRAM(){
+    let cnt: number = 0
+
+    for(var i = 0; i < 128; i++){
+      for(var j = 0; j < 160; j++){
+        this.drawDot(j, i, this.Util.convertUint16565ToStr888(this.Ram.read16(cnt)))
+        cnt += 1
+      }
+    }
+  }
 }

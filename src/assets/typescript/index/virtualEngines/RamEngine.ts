@@ -39,7 +39,7 @@ export default class RamEngine{
 
     for(var i = 0; i < h; i++){
       for(var j = 0; j < w; j++){
-        this.write16(first + j + (i * (160 - 1)), value)
+        this.write16(first + j + (i * 160), value)
       }
     }
   }
@@ -49,6 +49,13 @@ export default class RamEngine{
 
     this.Memory[address * 2] = convered[0]
     this.Memory[(address * 2) + 1] = convered[1]
+  }
+
+  read16(address: number): number{
+    let upper: string = this.Util.fillZeros(this.Memory[address * 2].toString(2), 8)
+    let lower: string = this.Util.fillZeros(this.Memory[(address * 2) + 1].toString(2), 8)
+  
+    return parseInt(upper + lower, 2)
   }
 
   writeByte(address: number, value: number){ 
